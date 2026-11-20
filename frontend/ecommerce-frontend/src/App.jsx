@@ -1,8 +1,10 @@
 import Nav from "./components/nav/navbar.jsx";
-import HomeLand from "./components/homeland/homeland.jsx";
+import Profile from "../src/pages/profile.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/login/login.jsx";
+import Home from "./pages/home.jsx";
+
 
 const App = () => {
   return (
@@ -13,7 +15,8 @@ const App = () => {
 
       <div className="grow">
         <Routes >
-        <Route path="/" element={<HomeLand />} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/profile" element={<Profile/>} />
         <Route path="/login" element={<Login />} />
       </Routes>
       </div>
